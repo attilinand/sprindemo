@@ -25,25 +25,7 @@ public class CarsController {
     	
     	StringBuffer retBuf = new StringBuffer();
 
-       // List<Cars> carList = (List<Cars>) carRepository.findAll();
-
-    	List<Cars> carList= new ArrayList<>();
-    	
-    	Cars cars= new Cars();
-    	cars.setColor("blue");
-    	cars.setId(1);
-    	cars.setModel(1);
-    	cars.setManufacture_name("FORD");
-    	
-    	
-    	Cars carsFerarri= new Cars();
-    	cars.setColor("red");
-    	cars.setId(2);
-    	cars.setModel(3);
-    	cars.setManufacture_name("Ferrari");
-    	
-    	carList.add(cars);
-    	carList.add(carsFerarri);
+        List<Cars> carList = (List<Cars>) carRepository.findAll();
     	
         if (carList != null) {
             for (Cars car : carList) {
